@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="bg-teal-500">
+    <div class="max-w-xl w-full bg- mt-10 px-4 lg:text-xl bg-slate-50 lg:mx-auto">
+      <h1 class="text-center font-bold text-2xl text-teal-500 lg:text-5xl mb-10 uppercase">reservasi restoran</h1>
+      <!-- reservasi restoran -->
+      <div class="max-w-lg border border-slate-400 my-10 rounded-xl mx-auto p-5 shadow-md font-serif">
+        <form action="">
+             <!-- Nama Lengkap -->
+          <label for="Nama_Lengkap" class="block">
+            <span class="font-semibold uppercase text-sm  after:text-red-500  ml-1">Nama Lengkap</span>
+
+            <input type="text" id="nama" placeholder="MASUKAN NAMA" 
+            class="px-3 py-2 border shadow rounded-full w-full block text-sm placeholder:text-slate-500 focus:outline-none focus:ring-1 focus:ring-teal-500 focus:border-teal-500 mb-4"/>
+          </label>
+          <!-- end Nama Lengkap -->
+          <!-- no hp -->
+          <label for="NOMOR HP"  class="block">
+            <span class="font-semibold uppercase text-sm after:text-red-500 ml-1">NOMOR HP</span>
+
+            <input type="number" id="no_hp" placeholder="MASUKAN NOMOR HP" 
+            class="px-3 py-2 border shadow rounded-full w-full block text-sm placeholder:text-slate-500 focus:outline-none focus:ring-1 focus:ring-teal-500 focus:border-teal-500 mb-4"/>
+          </label>
+          <!-- end no hp -->
+          <!-- tanggal -->
+          <label for="date" class="block"
+            ><span class="font-semibold text-sm after:text-red-500 ml-0.5 uppercase">TANGGAL reservasi</span>
+            <input id="tgg"
+              type="date"
+              placeholder="TANGGAL"
+              class="px-3 py-2 border shadow rounded-full w-full block text-sm placeholder:text-slate-500 focus:outline-none focus:ring-1 focus:ring-teal-500 focus:border-teal-500 mb-4"
+            />
+           
+          </label>
+          <!-- tranggal -->
+          <!-- jumlah -->
+          <label for="JUMLAH" class="block"
+            ><span class="font-semibold uppercase text-sm  ml-1">JUMLAH ORANG</span>
+            <input id="jumlah"
+              type="number"
+              placeholder="JUMLAH ORANG"
+              class="px-3 py-2 border shadow rounded-full w-full block text-sm placeholder:text-slate-500 focus:outline-none focus:ring-1 focus:ring-teal-500 focus:border-teal-500 mb-4 "
+            />
+        </label>
+       <!-- waktu -->
+        <label for="waktu">
+            <span class="uppercase font-semibold block">waktu</span>
+        </label>
+      <!-- waktu -->
+      <p> <input type="radio" id="waktu1" name="waktu" value="pagi">PAGI</p>
+      
+      <p> <input type="radio" id="waktu2" name="waktu" value="SIANG">SIANG</p>
+
+      <p> <input type="radio" id="waktu3" name="waktu" value="MALAM">MALAM</p>
+
+     
+
+        </form>
+        <button  onclick="but()" 
+        class="block mt-7 bg-teal-500 px-5 py-2 rounded-full w-1/2 mx-auto hover:bg-slate-600 hover:text-white mb-10">PESAN</button>
+      </div>
+      <h1 id="h1"></h1>
+      <h1 id="h2"></h1>
+      <h1 id="h3"></h1>
+      <h1 id="h4"></h1>
+      <h1 id="h5"></h1>
+    <div class="mb-96"></div>
+
+    <script src="script.js"></script>
+    
+  </body>
+</html>
